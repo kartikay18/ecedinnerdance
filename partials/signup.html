@@ -1,0 +1,117 @@
+<div class="container">
+    <div class="page-content">
+        <div class="row">
+            <div class="space-6"></div>
+            <div class="col-sm-6 col-sm-offset-1">
+                <div id="login-box" class="login-box visible widget-box no-border">
+                    <div class="widget-body">
+                        <div class="widget-main">
+                            <h4 class="header blue lighter bigger">
+                                Signup for ECE Dinner Dance
+                            </h4>
+                            <br/>
+                            <form name="signupForm" class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="ticketNum">Ticket Number</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="number" class="form-control" placeholder="Ticket Number" name="ticketNum" ng-model="signup.ticketNum" focus/>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="name">Ticket Type</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <span>
+                                                <input type="radio" ng-model="signup.ticketType" value="early bird">
+                                                Early Bird
+                                            </span>
+                                            <span>
+                                                <input type="radio" ng-model="signup.ticketType" value="drinking">
+                                                Drinking
+                                            </span>
+                                            <span>
+                                                <input type="radio" ng-model="signup.ticketType" value="non-drinking">
+                                                Non-Drinking
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="email">Email</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="email" class="form-control" placeholder="Email" name="email" ng-model="signup.email" focus/>
+                                            <span ng-show="signupForm.email.$error.email" class="help-inline">Email is not valid</span> 
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="email">Confirm Email</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="email" class="form-control" name="email2" placeholder="Email Again" ng-model="signup.email2" email-match="signup.email" required/>                                
+                                            <small class="errorMessage" data-ng-show="signupForm.email2.$dirty && signupForm.email2.$error.required"> Enter email again.</small>
+
+                                            <small class="errorMessage" data-ng-show="signupForm.email2.$dirty && signupForm.email2.$error.emailNoMatch && !signupForm.email2.$error.required"> Emails do not match.</small>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="firstName">First Name</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="text" class="form-control" placeholder="First Name" ng-model="signup.firstName" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="lastName">Last Name</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="text" class="form-control" placeholder="Last Name" ng-model="signup.lastName" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="dietaryRestrictions">Dietary Restrictions</label>
+                                    <div class="col-sm-3">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="radio" name="dietaryRestrictions" ng-model="signup.food" value="None">None</input>
+                                        </span>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <span>
+                                            <input type="radio" name="dietaryRestrictions" ng-model="signup.food" value="Vegetarian/Halal">Vegetarian/Halal</input>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label no-padding-right" for="allergies">Allergies</label>
+                                    <div class="col-sm-7">
+                                        <span class="block input-icon input-icon-right">
+                                            <input type="text" class="form-control" name="allergies" ng-model="signup.allergies" />
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <span class="lbl col-sm-5"> </span>
+                                    <div class="col-sm-7">
+                                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
+                                            Sign Up
+                                        </button>
+                                    </div>
+                                </div>
+                                </fieldset>
+                                <span class="lbl col-sm-5"> </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- /.page-content -->
+</div>

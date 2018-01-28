@@ -1,0 +1,970 @@
+#title1 {
+  font-family: "Times", serif;
+  color: #2055f3;
+  background-color: white;
+}
+
+#title2 {
+  font-family: "Times", serif;
+  font-size: 48px;
+  color: #c11e8d;
+  background-color: white;
+}
+
+  @import url("https://fonts.googleapis.com/css?family=Playball");
+  @import url("https://fonts.googleapis.com/css?family=Pinyon+Script");
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+  @import url("https://fonts.googleapis.com/css?family=Roboto:400,100,700");
+
+  /******* Font style *****/
+  /* harry_p */
+  @font-face {
+      font-family: 'harry_p';
+      src: url('../fonts/harryp/harryp__-webfont.eot');
+      src: url('../fonts/harryp/harryp__-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/harryp/harryp__-webfont.woff2') format('woff2'),
+           url('../fonts/harryp/harryp__-webfont.woff') format('woff'),
+           url('../fonts/harryp/harryp__-webfont.ttf') format('truetype'),
+           url('../fonts/harryp/harryp__-webfont.svg#harry_pregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  @font-face {
+      font-family: 'skyfall'; /*a name to be used later*/
+      src: url('../fonts/skyfall/SkyFall Done.ttf'); /*URL to font*/
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'headline'; /*a name to be used later*/
+      src: url('../fonts/HEADOH__.TTF'); /*URL to font*/
+
+  }
+  @font-face {
+      font-family: 'Felipa'; /*a name to be used later*/
+      src: url('../fonts/Felipa-Regular.ttf'); /*URL to font*/
+
+  }
+  @font-face {
+      font-family: 'FaceYourFears'; /*a name to be used later*/
+      src: url('../fonts/DK Face Your Fears.ttf') format('truetype'); /*URL to font*/
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'londonB'; /*a name to be used later*/
+      src: url('../fonts/LondonTwo.ttf'); /*URL to font*/
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'londonM'; /*a name to be used later*/
+      src: url('../fonts/LondonBetween.ttf'); /*URL to font*/
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'londonL'; /*a name to be used later*/
+      src: url('../fonts/LondonMM.ttf'); /*URL to font*/
+      font-weight: normal;
+      font-style: normal;
+  }
+
+  /* Oswald_stencil */
+  @font-face {
+      font-family: 'oswald_stencil';
+      src: url('../fonts/oswald_stencil/oswald_stencil.eot');
+      src: url('../fonts/oswald_stencil/oswald_stencil.eot') format('embedded-opentype'),
+           url('../fonts/oswald_stencil/oswald_stencil.woff2') format('woff2'),
+           url('../fonts/oswald_stencil/oswald_stencil.woff') format('woff'),
+           url('../fonts/oswald_stencil/oswald_stencil.ttf') format('truetype'),
+           url('../fonts/oswald_stencil/oswald_stencil.svg#oswald_stencil') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
+  /******* Text *******/
+
+  /* Does not include header */
+  /*default*/
+  * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
+  }
+
+  h2 {
+    font-family: 'Times', sans-serif;
+    color: #FFFFFF;
+    letter-spacing: 10px;
+    font-size: 68px;
+    margin-left: 20px;
+  }
+
+  a, a:hover, a:focus {
+    text-decoration: none;
+    color: #eeeeee;
+  }
+
+  html, body{
+    margin: 0px ;
+    background :#F5F5F5;
+    height: 100%;
+  }
+
+  /**
+   * Section
+   */
+  .section {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-top: 125px;
+  }
+
+  .section .content {
+    width: 750px;
+    text-align: center;
+    display: inline-block;
+  }
+
+
+  /******* HOME *******/
+  .home-content {
+    width: 100%;
+    height: 769px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .home-content .cover-photo {
+    width:100%;
+    height:879px;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    /*-webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);*/
+  }
+  .home-content .front-title-wrapper {
+    width: 50%;
+    padding-top: 100px;
+    border-radius: 5px;
+    height: inherit;
+    color: #FFF;
+    /* Center */
+    display: block;
+    position: relative;
+
+  }
+
+  .home-content .front-title{
+    font-family: "FaceYourFears";
+    font-size: 184px;
+    line-height: normal;
+  }
+  .home-content .front-msg{
+    font-family: "headline";
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+  }
+  .home-content .front-tickets{
+    font-family: "headline";
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  .home-content .front-button {
+    padding: 5px;
+    width: 200px;
+    font-family: "FaceYourFears";
+    font-size:30px;
+    letter-spacing: 1px;
+    line-height: 55px;
+    padding: 0px;
+    display: inline-block;
+    text-align :center;
+    color: #FFF3F5;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background: #000000;
+    cursor: pointer;
+    -webkit-transition: background ease 0.8s;
+    transition: background ease 0.8s;
+  }
+  .home-content .front-button:hover {
+    background: #4B0D0D;
+  }
+  /******* INFO *******/
+  .section-content {
+    width: 100%;
+    height: 950px;
+    text-align: center;
+  }
+
+  .section-content.ticket {
+    background-color: #11111;
+    background-repeat: repeat;
+  }
+
+  .clippy {
+    height: 250px;
+    width: 300px;
+    background-position: center;
+    float: right;
+    background-color: blue;
+    background-image: url("../images/Clippy.png"); !important
+  }
+
+  .eventInfo {
+    height: 270px;
+    width: 450px;
+    float: right;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    color: #e90e8a;
+    font-size: 24px;
+    padding: 40px;
+    text-align: center;
+    background-color: #e6ff65;
+    background-position: center;
+
+  }
+
+  .friends {
+    height: 270px;
+    width: 450px;
+    float: left;
+    background-size: cover;
+    background-image: url("../images/web-friends.png");
+    background-position: center;
+  }
+  .will {
+    height: 270px;
+    width: 450px;
+    float: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("../images/web-will-smith.jpg");
+    background-position: center;
+  }
+
+  .transport {
+    height: 270px;
+    width: 450px;
+    float: left;
+    background-size: cover;
+    background-image: url("../images/transport.jpg");
+    background-position: center;
+  }
+
+  .cont1 {
+    display: inline-block;
+  }
+  .cont2 {
+    display: inline-block;
+    clear: both;
+  }
+
+  .cont3 {
+    display: inline-block;
+    clear: both;
+    margin-top: 70px;
+  }
+
+  .tickettitle {
+    text-align: center;
+    color: red;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    background-color: white;
+    font-size: 45px;
+    letter-spacing: -0.5px;
+  }
+
+  .ticketinfo {
+    text-align: center;
+    color: blue;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+    background-color: white;
+    font-size: 26px;
+  }
+  .section-content .section-container {
+
+    /* Offset */
+    padding: 30px;
+    /* Center Vertically */
+    display: inline-block;
+    position: relative;
+
+    /* Border Shadow */
+    border-radius: 10px;
+  }
+  .section-content .section-container.info {
+    width: 960px;
+    height: 100%;
+
+  }
+  .section-content .section-container.bus {
+    width: 960px;
+    height: 100%;
+    display: inline-block;
+  }
+  .section-content .section-container.ticket {
+    width: 960px;
+    height: 100%;
+
+  }
+  .section-content .section-container.menu {
+    width: 950px;
+    height: 100%;
+
+    /* background */
+
+    /* border */
+
+  }
+  /* Headers */
+  .section-content .section-container span {
+    opacity: 0;
+    transition: opacity 1300ms;
+    font-size: 82px;
+    margin: 0px;
+  }
+  .section-content .section-container span:nth-child(1)  { transition-delay:  100ms }
+  .section-content .section-container span:nth-child(2)  { transition-delay:  850ms }
+  .section-content .section-container span:nth-child(3)  { transition-delay:  450ms }
+  .section-content .section-container span:nth-child(4)  { transition-delay:  200ms }
+  .section-content .section-container span:nth-child(5)  { transition-delay:  650ms }
+  .section-content .section-container span:nth-child(6)  { transition-delay:  750ms }
+  .section-content .section-container span:nth-child(7)  { transition-delay:  250ms }
+  .section-content .section-container span:nth-child(8)  { transition-delay:  700ms }
+  .section-content .section-container span:nth-child(9)  { transition-delay:  350ms }
+
+  .section-content.animate .section-container span {
+    opacity: 1;
+  }
+
+  /* Content */
+  .section-content .section-container .content-wrapper {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .section-content .section-container .content-wrapper.bus{
+    width: 50%;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+  }
+  .section-content .section-container .map{
+    width: 50%;
+    margin-top: 30px;
+    text-align: center;
+    display: inline-block;
+    float: right;
+  }
+
+  .section-content .section-container .content {
+    width: 100%;
+    font-size: 38px;
+    margin-top: 0px;
+    text-align: left;
+    display: inline-block;
+  }
+  .section-content .section-container.menu .content {
+    text-align: center;
+    line-height: 2;
+  }
+  .section-content.animate .section-container .content{
+    opacity: 1;
+  }
+
+  .section-content .section-container .divider {
+    opacity: 0.9;
+    width: 100%;
+  }
+  /* Info */
+  .section-content .section-container.info .content .title {
+    width: 30%;
+    font-family: 'londonM', cursive;
+    color: #FFFFFF;
+    font-size: inherit;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .section-content .section-container.info .content .data {
+    width: 70%;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: 'londonL', cursive;
+    font-size: inherit;
+  }
+  /*Busses*/
+  .section-content .section-container.bus .content .title {
+    width: 50%;
+    font-family: 'londonM', cursive;
+    color: #FFFFFF;
+    font-size: inherit;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .section-content .section-container.bus .content .data {
+    width: 50%;
+    line-height: 110%;
+    display: inline-block;
+    color: #FFFFFF;
+    vertical-align: top;
+    text-align: center;
+    font-family: 'londonL', cursive;
+    font-size: inherit;
+  }
+ /* Tickets */
+  .section-content .section-container.ticket .content .title {
+    width: 30%;
+    font-family: 'londonM', cursive;
+    color: #FFFFFF;
+    font-size: inherit;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .section-content .section-container.ticket .content .data {
+    width: 70%;
+    display: inline-block;
+    color: #FFFFFF;
+    font-family: 'londonL', cursive;
+    font-size: inherit;
+  }
+  .section-content .section-container.ticket .content .message {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    text-decoration-color: black;
+    color: #FFFFFF;
+    text-decoration: line-through;
+    font-family: 'londonL', cursive;
+    font-size: inherit;
+  }
+  .section-content .section-container.ticket .content .tickets {
+    width: 50%;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    background-color: white;
+    height: 300px;
+    color: #58f51a;
+    font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
+    font-size: 30px;
+  }
+  /* Menu */
+  .section-content .section-container.menu .title {
+    width: 100%;
+    font-family: 'londonM', cursive;
+    color: #FFF;
+    font-size: 38px;
+  }
+  .section-content .section-container.menu .data {
+    width: 100%;
+    font-family: 'londonL', cursive;
+    color: #FFF;
+    font-size: 32px;
+  }
+  .section-content .section-container.menu .subtitle {
+    width: 100%;
+    font-family: 'headline', cursive;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .dine-table {
+
+  }
+  /******* Login ******/
+
+
+
+  /****** Utilities *****/
+
+  .float-right {
+    float: right;
+  }
+
+  .long {
+    width: 100% !important;
+  }
+  .medium {
+    width: 85% !important;
+  }
+  .full{
+    margin-left: 0px !important;
+
+  }
+
+  .auto-height {
+    height:auto !important;
+  }
+
+  .fixed {
+    position: fixed !important;
+  }
+
+  .showing {
+    max-height: 500px !important;
+    opacity: 1 !important;
+  }
+
+  .hidding {
+    margin: 0 !important;
+    max-height: 0 !important;
+    opacity: 0 !important;
+    padding: 0 !important;
+  }
+
+  .visible {
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
+
+  .invisible {
+    display: none !important;
+  }
+
+  .not-showing {
+    visibility: hidden !important;
+  }
+
+  .no-overflow {
+    width: 100%;
+    overflow: scroll;
+    background-image: url("../images/BKGDPattern.jpg");
+  }
+  .no-x-overflow {
+    overflow-x:hidden;
+  }
+  .show-block {
+    display: block !important;
+  }
+
+  .faded-divider {
+    display:block;
+    border:none;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 51% 50%, 0, 50% 50%, 350, from(#3B4148), to(#FFFFFF));
+  }
+
+  .no-payment{
+    position: absolute;
+    top:50%;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .radio-drinking{
+
+  }
+
+  .radio-non-drinking{
+
+  }
+  .price-class{
+      float: right;
+  }
+  @media screen and (max-width: 1250px) {
+    /**** dashboard ****/
+    .dashboard {
+      width: 100%;
+    }
+    /** HOME ***/
+    .section-content .section-container span {
+      font-size: 76px;
+    }
+    .section-content .section-container .content {
+      font-size: 34px;
+    }
+    .section-content .section-container.info {
+      height: 61.5%;
+      width: 880px;
+    }
+
+    .section-content .section-container.menu {
+      width: 850px;
+    }
+    /**** long table shrink ****/
+    .custom-table.long {
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+
+    .custom-table.long .custom-table-entry.table-header{
+      display: none;
+    }
+
+    .custom-table.long tbody {
+      display: block;
+
+    }
+    .custom-table.long .custom-table-entry.data {
+      display: block;
+      border: 1px solid rgba(0,0,0,0.12);
+      border-radius: 2px;
+      margin-bottom: 20px;
+      height: auto;
+      padding: 10px;
+    }
+    .custom-table-entry.data .fa{
+      margin-right: 0px;
+      margin-left: 15px;
+    }
+    .custom-table.long .custom-table-entry.data > td {
+      height: 40px;
+      background-color: #ffffff;
+      display: block;
+      vertical-align: middle;
+      text-align: right;
+      word-break: break-all;
+    }
+    .custom-table.long .custom-table-entry.data > td[data-title]:before {
+      content: attr(data-title);
+      float: left;
+      font-size: inherit;
+      font-weight: 400;
+      color: #757575;
+    }
+    /* all input boxes in table */
+    .custom-table-entry.data .information-box {
+      width: 50%;
+      height: 100%;
+    }
+
+    .custom-table-entry.data .information-box input{
+      text-align: right;
+    }
+
+
+  }
+
+  @media screen and (max-width: 884px) {
+    /**** CONTENT ****/
+    .section .content {
+      width: 525px;
+    }
+    /*** HOME ***/
+
+    .home-content .front-title-wrapper {
+      width: 80%;
+    }
+    .home-content .front-title-wrapper .front-title {
+      font-size: 78px;
+    }
+    .section-content .section-container.info {
+      width: 85%;
+      height: 75%;
+    }
+    .section-content .section-container span {
+      font-size: 72px;
+    }
+    .section-content .section-container .content {
+      font-size: 32px;
+    }
+    .section-content .section-container.menu {
+      width: 80%;
+    }
+    .section-content .section-container.menu .title {
+      font-size: 32px;
+    }
+    .section-content .section-container.menu .data {
+      font-size: 30px;
+    }
+    /**PAYMENT ***/
+    .payment .title {
+      font-size: 120px;
+    }
+
+    /*** Admin ****/
+    .dashboard .sidebar{
+      width: 100%;
+      height: 283px;
+      position: absolute;
+    }
+    .dashboard .content-container {
+      margin-left: 0px;
+      margin-top: 283px; /*correspond to navbar width */
+    }
+
+    /**** FORM *****/
+    .information-box{
+      width: 100%;
+    }
+
+    .register-button{
+      float: none;
+    }
+    .register-button-container {
+      width: 100%;
+    }
+    /**** PAYMENT ****/
+    .standard-form .form-title .bolt-wrapper {
+      width: 75px;
+    }
+    .standard-form .form-title .bolt-wrapper img {
+      right: 85px;
+      bottom: 50px;
+    }
+    .standard-form .form-title .bolt-wrapper .number {
+      right: 125px;
+      bottom: 180px;
+    }
+
+    /* Popup */
+    .popup-window {
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    }
+
+  }
+
+  @media screen and (max-width: 610px) {
+    /**** CONTENT ****/
+    .section .content {
+      width: 90%;
+    }
+    /** Home **/
+    .nav-header {
+      height: 105px;
+    }
+    .home-content .front-title-wrapper {
+      width: 95%;
+    }
+    .home-content .front-title-wrapper .front-title {
+      font-size: 68px;
+    }
+    .home-content .front-title-wrapper .front-msg {
+      font-size: 18px;
+    }
+    .section-content .section-container span {
+      font-size: 68px;
+    }
+    .section-content .section-container .content {
+      font-size: 28px;
+    }
+    .section-content .section-container.ticket{
+      font-size: 62px;
+      width: 98%;
+    }
+    .section-content .section-container.ticket .content .data{
+      font-size: 24px;
+    }
+    .section-content .section-container.ticket .content .title{
+      font-size: 28px;
+    }
+    .section-content .section-container.ticket .content .message{
+      font-size: 24px;
+    }
+    .section-content .section-container.ticket .content .tickets{
+      font-size: 24px;
+    }
+    .section-content .section-container .map{
+      display: none;
+    }
+    .section-content .section-container.bus{
+      font-size: 62px;
+      width: 98%;
+    }
+    .section-content .section-container.bus .content .data{
+      font-size: 24px;
+    }
+    .section-content .section-container.bus .content .title{
+      font-size: 20px;
+    }
+    .section-content .section-container.bus .content .message{
+      font-size: 24px;
+    }
+    .section-content .section-container.bus .content .tickets{
+      font-size: 24px;
+    }
+
+    .dine-table {
+      display: none;
+    }
+    .section-content .section-container.menu {
+      width: 90%;
+    }
+    /**** PAYMENT ****/
+    .payment .title {
+      font-size: 92px;
+    }
+    .payment .error-section .error-msg-wrapper {
+      padding-left: 0px;
+      margin-top: 25px;
+      width: 100%;
+    }
+    .card-info .number {
+      width: 100% !important;
+    }
+
+    .card-info .cvc {
+      width: 100% !important;
+    }
+
+    .card-info .exp_month {
+      width: 100% !important;
+    }
+
+    .card-info .exp_year {
+      width: 100% !important;
+    }
+    /** table selection table **/
+    .user-content .table-row {
+      margin-top: 0px;
+    }
+    .user-content .table {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .standard-form .form-section {
+      padding: 10px;
+    }
+    .standard-form .form-title .bolt-wrapper {
+      width: 67px;
+    }
+    .standard-form .form-title .bolt-wrapper img {
+      right: 72px;
+      bottom: 45px;
+    }
+    .standard-form .form-title .bolt-wrapper .number {
+      right: 108px;
+      bottom: 145px;
+      font-size: 26px;
+    }
+
+  }
+
+  @media screen and (max-width: 474px) {
+    /**** Navbar ****/
+    .nav-header .logo {
+      font-size: 26px;
+      margin-top: 5px;
+    }
+    h2{
+      font-size: 42px;
+    }
+    .home-content .front-title-wrapper {
+      width: 95%;
+    }
+    .home-content .front-title-wrapper .front-title {
+      font-size: 48px;
+    }
+    .home-content .front-title-wrapper .front-msg {
+      font-size: 16px;
+    }
+    .section-content .section-container span {
+      font-size: 62px;
+    }
+    .section-content .section-container .content {
+      font-size: 22px;
+      width: 98%;
+    }
+    .section-content .section-container.menu .title {
+      font-size: 28px;
+    }
+    .section-content .section-container.menu .data {
+      font-size: 24px;
+    }
+    .section-content .section-container.ticket{
+      font-size: 62px;
+      width: 98%;
+    }
+    .section-content .section-container.ticket .content .data{
+      font-size: 24px;
+    }
+    .section-content .section-container.ticket .content .title{
+      font-size: 28px;
+    }
+    .section-content .section-container.ticket .content .message{
+      font-size: 24px;
+    }
+    .section-content .section-container.ticket .content .tickets{
+      font-size: 24px;
+    }
+    .section-content .section-container .map{
+      display: none;
+    }
+    .section-content .section-container .content-wrapper.bus{
+      display: block;
+      width: 95%;
+    }
+    .section-content .section-container.bus{
+      font-size: 62px;
+      width: auto;
+      height: 150%;
+    }
+    .section-content .section-container.bus .content .data{
+      font-size: 24px;
+    }
+    .section-content .section-container.bus .content .title{
+      font-size: 20px;
+    }
+    .section-content .section-container.bus .content .message{
+      font-size: 24px;
+    }
+    .section-content .section-container.bus .content .tickets{
+      font-size: 24px;
+    }
+    /**** Login *****/
+    .login .content {
+      width: 85% !important;
+    }
+    .login .title {
+      font-size: 72px;
+    }
+    .login .message a {
+      display: block;
+    }
+    /**** form ***/
+    .standard-form .display-box .title {
+      font-weight: 700;
+      width: 100%;
+    }
+    .standard-form .display-box .data {
+      text-align: right;
+      width: 100%;
+    }
+    .standard-form .form-title .bolt-wrapper {
+      display:none;
+    }
+    .standard-button {
+      width: 110px;
+    }
+    /**** For word wrap ****/
+    .dashboard .sidebar{
+      height: 317px;
+      position: absolute;
+    }
+    /**** Generic container ****/
+    .dashboard .content-container {
+      margin-left: 0px;
+      margin-top: 317px; /*correspond to navbar width */
+    }
+    .standard-form .form-title {
+      margin-bottom: 35px;
+    }
+    .multilines {
+      -webkit-transform: translate(-8px,-25px);
+      -ms-transform: translate(-8px,-25px);
+      transform: translate(-8px,-25px);
+    }
+
+  }

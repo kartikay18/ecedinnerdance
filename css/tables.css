@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'FaceYourFears'; /*a name to be used later*/
+  src: url('../fonts/DK Face Your Fears.ttf') format('truetype'); /*URL to font*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+.card {
+	
+  font-family: 'FaceYourFears', Verdana, Geneva, sans-serif;
+  float:left;
+  width:300px;
+  height:330px;
+  padding: 0px 20px 20px 20px;
+  margin: 15px 30px 15px 0px;
+  border: solid #AAA 2px;
+  background-image: url("../images/Evil_looking_table.jpg");
+  color: white;
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  text-align: center;
+}
+
+
+.card-content{
+  overflow:hidden;
+  padding-right: 15px;
+  height: 250px;
+}
