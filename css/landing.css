@@ -1,5 +1,5 @@
 #title1 {
-  font-family: "Times", serif;
+  font-family: "Comic Sans", serif;
   color: #2055f3;
   background-color: white;
 }
@@ -240,12 +240,12 @@
 
   }
 
-  .friends {
+  .clueless {
     height: 270px;
     width: 450px;
     float: left;
     background-size: cover;
-    background-image: url("../images/web-friends.png");
+    background-image: url("../images/web-clueless.jpg");
     background-position: center;
   }
   .will {
@@ -257,9 +257,25 @@
     background-image: url("../images/web-will-smith.jpg");
     background-position: center;
   }
+  .friends {
+    height: 270px;
+    width: 470px;
+    float: right;
+    background-size: cover;
+    background-image: url("../images/web-friends.png");
+    background-position: center;
+  }
+  .menuInfo {
+    height: 270px;
+    width: 430px;
+    float: left;
+    background-size: cover;
+    background-image: url("../images/menu.jpg");
+    background-position: center;
+  }
 
   .transport {
-    height: 270px;
+    height: 285px;
     width: 450px;
     float: left;
     background-size: cover;
@@ -273,12 +289,17 @@
   .cont2 {
     display: inline-block;
     clear: both;
+    margin-bottom: 70px;
   }
 
   .cont3 {
     display: inline-block;
     clear: both;
-    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .cont4 {
+    margin-bottom: 70px;
   }
 
   .tickettitle {
